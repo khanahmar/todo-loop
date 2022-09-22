@@ -1,2 +1,2 @@
 # todo-loop
-<a hrerf="https://add-or-remove-data.netlify.app/" >live link</a>
+[This is an external link ](https://add-or-remove-data.netlify.app/)
