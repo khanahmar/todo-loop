@@ -11,6 +11,7 @@ const data = document.getElementById("data");
 const input = document.getElementById("input");
 const del = document.getElementById("delete");
 const clear = document.getElementById("clear");
+const icon = document.getElementById("icon");
 
 // Making functions
 const loadData = () => {
@@ -31,7 +32,7 @@ input.addEventListener("keydown", (e) => {
 
 clear.addEventListener("click", (e) => {
   list = [];
-  data.innerText = "No item";
+  data.innerText = "";
 });
 
 del.addEventListener("click", (e) => {
@@ -76,4 +77,14 @@ data.addEventListener("click", (e) => {
   const key = e.target.getAttribute("key");
   list.splice(key, 1);
   loadData();
+});
+
+icon.addEventListener("click", (e) => {
+  list.push(input.value);
+  loadData();
+  input.value = "";
+});
+
+data.addEventListener("mouseover", (e) => {
+  data.innerHTML.append();
 });
