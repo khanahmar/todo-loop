@@ -8,18 +8,18 @@
 }
 body {
   font-family: "Baloo Bhai 2", cursive;
-  max-width: 100%;
-  max-height: 100%;
-  background-color: rgb(81, 181, 181);
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  /* height: 500px; */
 }
 .container {
-  position: absolute;
-  /* border: 1px hidden black; */
-  /* transform: translate(600px, 150px); */
-  margin-top: 5%;
-  margin-left: 40%;
-  border-radius: 5px;
-  background-color: white;
+  margin-top: 10vh;
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: rgb(252, 143, 0);
+  box-shadow: 0px 6px 10px rgb(1, 241, 181);
 }
 h1 {
   text-align: center;
@@ -34,10 +34,20 @@ h1 {
   font-family: "Baloo Bhai 2", cursive;
 }
 
+#input:focus {
+  outline: none;
+}
+
 #icon {
-  font-size: 45px;
+  font-size: 40px;
   cursor: pointer;
-  margin-right: 3px;
+  margin-right: 7px;
+  margin-left: 3px;
+  padding: 0 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 li {
   background-color: rgb(221, 218, 218);
@@ -62,13 +72,14 @@ li:hover {
   padding: 6px;
   border-radius: 4px;
   border: none;
-  background-color: rgb(238, 53, 53);
+  background-color: rgb(61, 58, 61);
   color: white;
   cursor: pointer;
   transition: 0.2s;
 }
 #delete:hover {
-  background-color: rgb(219, 85, 85);
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 #clear {
   font-size: 18px;
@@ -82,9 +93,24 @@ li:hover {
   cursor: pointer;
   transition: 0.2s;
 }
+
 #clear:hover {
   background-color: rgb(157, 86, 222);
 }
+
 .delete-icon {
   color: red;
+}
+
+#data li {
+  display: flex;
+  justify-content: space-between;
+}
+
+#data li i {
+  display: none;
+}
+
+.hidden {
+  display: none;
 }
